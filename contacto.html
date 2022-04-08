@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span> </h1>
+    </header>
+    <div class="contenedor-navegacion">
+        <input type="checkbox" id="menu" class="menu-input">
+        <label for="menu" id="menu">
+            <img src="/img/menu.png" alt="menu" width="20px">
+        </label>
+        <ul class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </ul>
+    </div>
+
+    <div class="titulo-contacto">
+        <h1>Contacto</h1>
+    </div>
+
+    <section>
+        <form action="">
+            <div class="contenedor-form">
+                <div>
+                    <h1>TUS DATOS</h1>
+                </div>
+                <label for="nombre">
+                    <span>Nombre: </span>
+                    <input type="text" name="nombre" id="nombre" placeholder="nombre" required />
+                </label>
+                <label for="asunto">
+                    <span>Asunto</span>
+                    <input type="text" name="asunto" id="asunto" placeholder="Tu asunto" required />
+                </label>
+                <label for="email">
+                    <span>E-mail: </span>
+                    <input type="text" name="email" id="email" placeholder="Tu email" required />
+                </label>
+                <label for="telefono">
+                    <span>Teléfono: </span>
+                    <input type="text" name="telefono" id="telefono" placeholder="Tu teléfono" required />
+                </label>
+                <label for="mensaje">
+                    <span>Mensaje: </span>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required>
+                                </textarea>
+                </label>
+            </div>
+
+            <div class="contenedor-form">
+                <div>
+                    <h1>PAIS</h1>
+                </div>
+                <label for="country">
+                    <span>País </span>
+                    <select name="pais" required>
+                        seleccione
+                        <option value="1">Argentina</option>
+                        <option value="2">España</option>
+                        <option value="3">México</option>
+                        <option value="4">Guatemala</option>
+                        <option value="5">Honduras</option>
+                        <option value="7">El Salvador</option>
+                        <option value="8">Venezuela</option>
+                        <option value="9">Colombia</option>
+                        <option value="10">Cuba</option>
+                        <option value="11">Bolivia</option>
+                        <option value="13">Perú</option>
+                        <option value="14">Ecuador</option>
+                        <option value="15">Paraguay</option>
+                        <option value="16">Uruguay</option>
+                        <option value="17">Chile</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="contenedor-form">
+                <div>
+                    <h1>INFORMACIÓN EXTRA</h1>
+                </div>
+
+
+                <label for="cliente">
+                    <span>Cliente</span>
+                    <input type="radio" id="cliente" name="info" value="cliente">
+                </label><br>
+                <label for="proveedor">
+                    <span>Proveedor</span>
+                    <input type="radio" id="proveedor" name="info" value="proveedor">
+                </label><br>
+
+                <label for="asunto">
+                    <span>Categoría de interés</span>
+                    <input type="text" name="asunto" id="asunto" placeholder="Tu asunto" />
+                </label>
+            </div>
+
+            <div class="contenedor-form contenedor-submit">
+                <input class="submit" type="submit" value="Enviar formulario">
+            </div>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="footer-menu">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Políticas de Privacidad</a>
+                    <a href="#">Términos del Servicio</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en línea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos Reservados. TiendaMuebles</p>
+    </footer>
+</body>
+
+</html>
