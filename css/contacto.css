@@ -2,11 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: rgb(44, 44, 40);
 }
 
 body {
-    font-family: 'Raleway',
-        sans-serif;
+    font-family: 'Raleway',sans-serif;
+}
+h1{
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 3.8rem;
+}
+h3{
+    font-family: 'Playfair Display',
+    sans-serif;
+    font-size: 2rem;
 }
 
 header {
@@ -36,6 +45,9 @@ header {
     justify-content: center;
     padding: 2rem 0rem;
 }
+.titulo-contacto h1 {
+    font-size: 2.5rem;
+}
 
 form {
     display: flex;
@@ -58,12 +70,13 @@ form {
     position: relative;
     bottom: 1rem;
     justify-content: center;
-    background-color: #0c405e;
+    background-color: #1b6b9a;
     color: #fff;
     margin: 0 1rem 2rem 0;
 }
 
 .contenedor-form div h1 {
+    font-family: 'Raleway',sans-serif;
     font-size: 1rem;
 }
 
@@ -103,7 +116,7 @@ select {
     width: 150px;
     margin: 0;
     border: none;
-    background-color: greenyellow;
+    background-color: rgb(135, 202, 35);
     color: #fff;
 }
 
@@ -152,7 +165,7 @@ input#menu {
         list-style: none;
         height: 80%;
         position: absolute;
-        top: 10rem;
+        top: 15rem;
         right: 100%;
         transition: all 300ms linear;
         z-index: 2;
@@ -172,44 +185,46 @@ input#menu {
     }
 
 }
-.site-footer{
-    border-top: 1px solid #e1e1e1;
-    margin-top: 5rem;
-    padding-top: 5rem;
-}
-.site-footer h3{
-    margin-bottom: .5rem;
-    text-align: center;
-}
-@media (min-width: 768px){
-    .site-footer h3{
-        text-align: left;
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 2.5rem;
     }
-    .grid-footer{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-}
-.grid-footer > div {
-    margin-bottom: 2rem;
-}
-@media (min-width: 768px){
-    .grid-footer > div {
-        margin: 0;
+    .nav-principal{
+        top: 11rem;
     }
 }
 
-.footer-menu a{
-    display: block;
-    text-align: center;
+/* inicio del footer*/
+.grid-footer{
+    margin-top: 3rem;
+    border-top: 1px solid rgb(182, 181, 181);
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
 }
-@media(min-width: 768px){
-    .footer-menu a{
-        text-align: left;
-    }
+.footer-menu{
+    display: flex;
+    padding-top: 1.5rem;
+    flex-direction: column;
+}
+.footer-menu a{
+    padding: .5rem 0rem;
+    text-decoration: none;
+}
+.grid-footer div:nth-child(2){
+    padding: 0rem 15vw;
 }
 .copyright {
-    margin-top: 5rem;
+    padding: 3rem 0 2rem 0;
     text-align: center;
+}
+@media screen and (max-width: 900px) {
+    .grid-footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .grid-footer div:nth-child(2) {
+        padding: 2rem 0rem;
+    }
 }
